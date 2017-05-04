@@ -41,7 +41,7 @@ public class KNN {
             lineCounter++;
             baris = Arrays.copyOf(baris, lineCounter);
 //            String[] v = line.split(",");
-            String[] v = line.split("\t");
+            String[] v = line.split(" ");
             double[] data = new double[v.length];
             for (int i = 0; i < v.length; i++) {
                 data[i] = Double.parseDouble(v[i]);
